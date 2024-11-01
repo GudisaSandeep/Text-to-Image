@@ -36,5 +36,9 @@ demo = gr.Interface(
     description="Generate images using Azure OpenAI's DALL-E 3"
 )
 
+# Production deployment settings
+demo.queue()
+app = demo.app
+
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=int(os.getenv("PORT", 7860)))
+    demo.launch()
