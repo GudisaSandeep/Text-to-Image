@@ -1,3 +1,5 @@
-gradio
 openai
+gradio
 python-dotenv
+pillow
+requests
